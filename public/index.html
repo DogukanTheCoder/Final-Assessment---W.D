@@ -8,20 +8,48 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/demo.css">
-        <nav>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="chat.html">Chat</a></li>
-</ul>
-</nav>
+
     </head>
     <body>
-        <h1><strong>This is my Professional Portfolio.</strong></h1> <br>
-        <p><u><center>Down below you can find my resume: </center></u><p>
-            <p> This is Dogukan Aktas and I am currently a first year Computing Science student studying at the University of Aberdeen. <br>
-            At the past I had experience in online transcription Job and developed  my critical thinking abilities whilst learning to use the  <br>
-            guidelines and making use of them.
+        <div id="new" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="chat.html">Chat</a>
+                </div>
+
+                
+
+                <div class="main">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                <h1><strong>This is my Professional Portfolio.</strong></h1> <br>
+                <p><u><center>Down below you can find my resume: </center></u><p>
+                    <div> This is Dogukan Aktas and I am currently a first year Computing Science student <br> 
+            studying at the University of Aberdeen. At the past I had experience in online <br>
+            transcription Job and developed  my critical thinking abilities whilst learning <br>
+            to use the guidelines.
+
+
+            </p>
+    
+            </div>
+
+<script>
+function openNav() {
+  document.getElementById("new").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("new").style.width = "0";
+}
+</script>
+
+
+
+
+
+
 
         <p><a href = "chat.html">Chat</a></p>
         
