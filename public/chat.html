@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Socket.io simple chat</title>
     <link rel="stylesheet" href="/css/demo.css" />
-    <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a class="active" href="chat.html">Chat</a></li>
-</ul>
-</nav>
   </head>
   <body>
+    <div id="new" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active" href="chat.html">Chat</a>
+                </div>
+
+</div>
+      <div class="main">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+                    </div>
+
+
     <div class="sidenav">
         <div class="inbox__people">
-            <h4>Active users</h4>
+            <h3>Active users</h3>
           </div>
 
-      </div>
-      
       
       <br>
       <hr>
@@ -39,8 +43,16 @@
             </button>
           </form>
       </div>
-
-    <script src="/socket.io/socket.io.js"></script>
+      <script>
+function openNav() {
+  document.getElementById("new").style.width = "100%";
+}
+function closeNav() {
+  document.getElementById("new").style.width = "0";
+}
+</script>
+      
+      <script src="/socket.io/socket.io.js"></script>
     <script src="/js/client.js"></script>
   </body>
 </html>
