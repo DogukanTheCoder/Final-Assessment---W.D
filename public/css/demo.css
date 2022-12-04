@@ -69,7 +69,9 @@
   transition: .5s;
   padding: 16px;
   margin-left: 50px;
+  background-color: aquamarine;
 }
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
